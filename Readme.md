@@ -13,3 +13,17 @@ Doing a `findOne` or just a `find` takes more than 2x time compared to `update n
 
 [view results HERE](https://ivanhuay.github.io/micron-mongoose-update-vs-save/)
 ![Alt image](https://github.com/ivanhuay/micron-mongoose-update-vs-save/blob/master/img/results.png?raw=true)
+
+## run the test
+
+```
+git clone https://github.com/ivanhuay/micron-mongoose-update-vs-save.git
+
+cd micron-mongoose-update-vs-save
+
+npm i
+
+npm run test
+```
+
+after running that the results should be on the docs folder.
