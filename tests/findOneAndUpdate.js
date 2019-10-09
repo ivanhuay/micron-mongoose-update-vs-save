@@ -1,5 +1,6 @@
 'use strict';
 const mongoose = require('mongoose');
+mongoose.set('useFindAndModify', false);
 const Books = require('../models/books');
 function beforeAll() {
     return mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true})
@@ -14,7 +15,7 @@ function afterAll() {
 
 let i = 1;
 function test() {
-    return Books.updateOne({title:'Book 1'}, {subtitle:`Book ${i + 1}`})
+    return Books.findOneAndUpdate({title:'Book 1'}, {$set:{subtitle:`Book ${i + 1}`}})
         .then(() => {
             i++;
         });

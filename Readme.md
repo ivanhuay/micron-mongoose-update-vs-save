@@ -9,10 +9,10 @@ In the past, some implementation of the library used the `pre-save` [method](htt
 
 ## Results:
 
-Doing a `findOne` or just a `find` takes more than 2x time compared to `update native method.
+Doing a `findOne` or just a `find` takes more than 2x time compared to `update` native method.
 
 [view results HERE](https://ivanhuay.github.io/micron-mongoose-update-vs-save/)
-![Alt image](https://github.com/ivanhuay/micron-mongoose-update-vs-save/blob/master/img/results.png?raw=true)
+![Alt image](./img/results.png)
 
 ## run the test
 
