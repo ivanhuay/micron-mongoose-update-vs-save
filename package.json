@@ -6,7 +6,7 @@
   "dependencies": {
     "eslint": "^5.16.0",
     "micron-runner": "0.0.12",
-    "mongoose": "^5.5.14"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {},
   "scripts": {
